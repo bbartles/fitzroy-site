@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Price of Money | Capital Ledger and course | Fitzroy &amp; Co.</title>
+<meta name="description" content="Price the decision to raise, bootstrap, or wait. Run the free Capital Ledger, join the live lesson, and learn the when and why of fundraising.">
+<link rel="canonical" href="https://fitzroyadvisory.com/price-of-money.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fitzroy &amp; Co.">
+<meta property="og:title" content="The Price of Money: price the decision to raise before you make it">
+<meta property="og:description" content="A free calculator, a free live lesson, and a cohort course on the when and why of raising capital.">
+<meta property="og:url" content="https://fitzroyadvisory.com/price-of-money.html">
+<meta property="og:image" content="https://fitzroyadvisory.com/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#16254A">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Spectral:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main">
+    <a class="brand" href="index.html"><img src="assets/mark.png" alt="" width="21" height="42"><span>Fitzroy &amp; Co.</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="price-of-money.html" aria-current="page">The Price of Money</a></li>
+      <li><a href="advisory.html">Advisory</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class="nav-cta" href="#ledger">Run the Ledger</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="hero-inner single">
+      <div>
+        <p class="page-name">The Price of Money</p>
+        <h1>Raise, bootstrap, or wait. Price the decision first.</h1>
+        <p class="lede">A free tool, a free live lesson, and a cohort course for founders deciding whether and when to raise capital.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#ledger">Run the Capital Ledger</a>
+          <a class="btn btn-ghost" data-link="mavenLightningUrl" href="#join">Join the free Lightning Lesson</a>
+        </div>
+      </div>
+    </div>
+    <svg class="hero-curve to-mist" viewBox="0 0 1440 64" preserveAspectRatio="none" aria-hidden="true"><path d="M0,64 L0,38 C260,6 520,-4 760,16 C1000,36 1220,54 1440,18 L1440,64 Z"/></svg>
+  </section>
+
+  <section class="section mist">
+    <div class="wrap two-col">
+      <div>
+        <h2>The when and why of raising capital</h2>
+        <p>Most fundraising instruction covers the what and the how: the deck, the process, the term sheet. It rarely asks whether raising is the right move, or whether now is the right time.</p>
+        <p>The Price of Money asks both. It puts dilution, founder time, and delay in one currency, so a funding decision can be argued with numbers instead of instinct. Then it makes room for what numbers cannot capture: control, signal, and the freedom to choose later.</p>
+      </div>
+      <div>
+        <h3>Who it is for</h3>
+        <ul class="plain-list">
+          <li><strong>Pre-seed founders</strong><span>Deciding whether, when, and how much to raise.</span></li>
+          <li><strong>Founders with another way to fund it</strong><span>Who could reach the next stage on revenue, consulting, or savings instead.</span></li>
+          <li><strong>Teams that advise founders</strong><span>Accelerators, programs, and mentors who coach this decision.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== The Capital Ledger ===== -->
+  <section class="ledger" id="ledger" aria-labelledby="ledger-title">
+    <div class="wrap">
+      <div class="ledger-head">
+        <h2 id="ledger-title">The Capital Ledger</h2>
+        <p class="lede">Set your numbers. The Ledger prices outside capital and bootstrapping in the same currency, then asks what the math cannot.</p>
+      </div>
+
+      <div class="ledger-grid">
+        <form class="inputs" onsubmit="return false" aria-label="Capital Ledger inputs">
+
+          <fieldset>
+            <legend>The decision</legend>
+            <div class="field">
+              <label for="need"><span class="name">Capital needed</span><output id="v-need" for="need">$300,000</output></label>
+              <input type="range" id="need" min="25000" max="2000000" step="5000" value="300000">
+              <p class="hint">What this stage requires: hiring, product, runway.</p>
+            </div>
+          </fieldset>
+
+          <fieldset class="fieldset-gap">
+            <legend>If you raise outside capital</legend>
+            <div class="field">
+              <label for="equity"><span class="name">Equity given up</span><output id="v-equity" for="equity">15%</output></label>
+              <input type="range" id="equity" min="1" max="40" step="0.5" value="15">
+              <p class="hint">The stake you would sell in this round.</p>
+            </div>
+            <div class="field">
+              <label for="exit"><span class="name">Estimated exit value</span><output id="v-exit" for="exit">$10,000,000</output></label>
+              <input type="range" id="exit" min="1000000" max="50000000" step="500000" value="10000000">
+              <p class="hint">Your honest estimate of what the company is worth if this works. Dilution only matters against this number.</p>
+            </div>
+            <div class="field">
+              <label for="raiseMonths"><span class="name">Months to close the round</span><output id="v-raiseMonths" for="raiseMonths">4 mo</output></label>
+              <input type="range" id="raiseMonths" min="1" max="12" step="1" value="4">
+              <p class="hint">From the first investor meeting to money in the bank.</p>
+            </div>
+            <div class="field">
+              <label for="raiseHours"><span class="name">Founder hours per month on the raise</span><output id="v-raiseHours" for="raiseHours">35 hrs</output></label>
+              <input type="range" id="raiseHours" min="5" max="100" step="5" value="35">
+              <p class="hint">Decks, diligence, and meetings: hours pulled away from running the company.</p>
+            </div>
+          </fieldset>
+
+          <fieldset class="fieldset-gap">
+            <legend>If you fund it yourself</legend>
+            <div class="field">
+              <label for="bsMonths"><span class="name">Months to generate the capital</span><output id="v-bsMonths" for="bsMonths">8 mo</output></label>
+              <input type="range" id="bsMonths" min="1" max="24" step="1" value="8">
+              <p class="hint">Time to raise the same amount from revenue, consulting, or other income.</p>
+            </div>
+            <div class="field">
+              <label for="bsHours"><span class="name">Founder hours per month generating it</span><output id="v-bsHours" for="bsHours">25 hrs</output></label>
+              <input type="range" id="bsHours" min="5" max="100" step="5" value="25">
+            </div>
+          </fieldset>
+
+          <fieldset class="fieldset-gap">
+            <legend>Your time and the cost of delay</legend>
+            <div class="field">
+              <label for="rate"><span class="name">Your hourly opportunity cost</span><output id="v-rate" for="rate">$200/hr</output></label>
+              <input type="range" id="rate" min="50" max="1000" step="10" value="200">
+              <p class="hint">What an hour of your time is worth elsewhere: a salary, consulting, or building the company directly.</p>
+            </div>
+            <div class="field">
+              <label for="delay"><span class="name">Cost of each extra month on the slower path</span><output id="v-delay" for="delay">$8,000/mo</output></label>
+              <input type="range" id="delay" min="0" max="100000" step="1000" value="8000">
+              <p class="hint">Missed customers, hires, or timing. Applies to whichever path takes longer.</p>
+            </div>
+          </fieldset>
+
+          <fieldset class="fieldset-gap">
+            <legend>Beyond the numbers</legend>
+            <p class="group-note">These are not priced in dollars. They shape how you read the result.</p>
+            <div class="field">
+              <label for="control"><span class="name">How much does keeping control matter to you?</span><output id="v-control" for="control">Matters</output></label>
+              <input type="range" id="control" min="1" max="5" step="1" value="3">
+            </div>
+            <div class="field">
+              <label for="signal"><span class="name">How much would an investor's signal and network help?</span><output id="v-signal" for="signal">Useful</output></label>
+              <input type="range" id="signal" min="1" max="5" step="1" value="3">
+            </div>
+            <div class="field">
+              <label for="option"><span class="name">How much is staying free to choose later worth?</span><output id="v-option" for="option">Worth something</output></label>
+              <input type="range" id="option" min="1" max="5" step="1" value="3">
+            </div>
+          </fieldset>
+        </form>
+
+        <div class="statement">
+          <div class="price-pair">
+            <div>
+              <p class="price-label">Outside capital</p>
+              <p class="price-num" id="p-out">$0.00</p>
+              <p class="price-sub">of exit value, time, and delay for every $1 you raise</p>
+            </div>
+            <div>
+              <p class="price-label">Bootstrap</p>
+              <p class="price-num" id="p-bs">$0.00</p>
+              <p class="price-sub">of your time and delay for every $1 you generate</p>
+            </div>
+          </div>
+
+          <table class="ledger-table">
+            <caption>What each path costs you</caption>
+            <thead>
+              <tr><th scope="col"><span class="sr-only">Cost</span></th><th scope="col">Outside capital</th><th scope="col">Bootstrap</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Dilution<span id="sub-dilution">Equity given up times estimated exit value.</span></th><td id="o-dilution">$0</td><td id="b-dilution">$0</td></tr>
+              <tr><th scope="row">Founder time<span>Months times hours times your hourly rate.</span></th><td id="o-time">$0</td><td id="b-time">$0</td></tr>
+              <tr><th scope="row">Delay<span>Extra months on the slower path times the monthly cost.</span></th><td id="o-delay">$0</td><td id="b-delay">$0</td></tr>
+            </tbody>
+            <tfoot>
+              <tr><th scope="row">Total</th><td id="o-total">$0</td><td id="b-total">$0</td></tr>
+            </tfoot>
+          </table>
+
+          <div class="reading" aria-live="polite">
+            <h3>The reading</h3>
+            <p id="reading-text"></p>
+            <p class="judgment" id="reading-judgment"></p>
+          </div>
+
+          <div class="after">
+            <p>Want a second opinion on what the math cannot price?</p>
+            <div class="btn-row">
+              <a id="cta-lesson" class="btn btn-primary" data-link="mavenLightningUrl" href="#join">Join the free Lightning Lesson</a>
+              <a id="cta-session" class="btn btn-ghost" href="advisory.html">Book a 30-minute session</a>
+            </div>
+            <div class="after-links">
+              <a id="cta-email" class="linklike" href="#">Email me this analysis</a>
+              <button type="button" class="linklike" id="copy-numbers">Copy my numbers</button>
+            </div>
+            <p class="copy-msg" id="copy-msg" role="status"></p>
+          </div>
+        </div>
+      </div>
+
+      <p class="disclaimer">The Capital Ledger is an educational illustration, not investment, legal, or tax advice. It runs in your browser: nothing you enter is sent anywhere unless you choose to email it.</p>
+    </div>
+  </section>
+
+  <section class="section mist">
+    <div class="wrap two-col">
+      <div>
+        <h2>How it works</h2>
+        <p class="lede">Start with the free tool. Go as deep as the decision deserves.</p>
+      </div>
+      <ol class="steps">
+        <li>
+          <div>
+            <h3>Run the Capital Ledger</h3>
+            <p class="tag">Free, any time</p>
+            <p>Enter your own numbers and see the price of each path in one column. There is nothing to sign up for.</p>
+            <a href="#ledger">Go to the Ledger</a>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Join the Lightning Lesson</h3>
+            <p class="tag">Free, live</p>
+            <p>A short live session where we work through the framework together and run real numbers. Dates are posted on Maven.</p>
+            <a data-link="mavenLightningUrl" href="#join">Reserve a seat</a>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Join the cohort</h3>
+            <p class="tag">Paid, live</p>
+            <p>The full framework over several live sessions, with your own funding decision as the project. Dates and pricing go to the waitlist first.</p>
+            <a data-link="mavenCourseUrl" href="#join">Join the waitlist</a>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap two-col">
+      <div>
+        <h2>Questions</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Is the Capital Ledger financial advice?</summary>
+          <p>No. It is an educational tool that shows how the costs of a funding decision add up under the assumptions you enter. For advice on your specific situation, talk to a qualified lawyer, accountant, or financial professional.</p>
+        </details>
+        <details>
+          <summary>What happens to the numbers I enter?</summary>
+          <p>They stay in your browser. Nothing is sent or saved unless you choose to email or copy them yourself.</p>
+        </details>
+        <details>
+          <summary>Why does the Ledger count my time?</summary>
+          <p>Because a raise is not free even when the money is. Months of founder hours go into it. The Ledger gives those hours the same price as your best alternative use of them, so both paths are measured the same way.</p>
+        </details>
+        <details>
+          <summary>Who teaches it?</summary>
+          <p>Brian Bartles, Professor of Venture Finance and Entrepreneurship at SMU's Cox School of Business. <a href="about.html">More about Brian</a>.</p>
+        </details>
+        <details>
+          <summary>When does the cohort start, and what does it cost?</summary>
+          <p>Neither has been announced yet. People on the list hear first.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="capture-band" id="join">
+    <div class="wrap">
+      <h2>Be first to know when the Lightning Lesson and cohort open</h2>
+      <p>Occasional notes on the when and why of raising capital. No spam, and you can leave any time.</p>
+      <form class="capture" data-capture novalidate>
+        <label class="sr-only" for="email-pom">Email address</label>
+        <input type="email" id="email-pom" placeholder="you@company.com" autocomplete="email" required>
+        <button class="btn btn-primary" type="submit">Join the list</button>
+        <p class="capture-msg" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/mark.png" alt="" width="18" height="36"><span>Fitzroy &amp; Co.</span></a>
+        <p class="tagline">Startup advisory and education on the decision to raise capital.</p>
+      </div>
+      <ul class="footer-nav">
+        <li><a href="price-of-money.html">The Price of Money</a></li>
+        <li><a href="price-of-money.html#ledger">Capital Ledger</a></li>
+        <li><a href="advisory.html">Advisory</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="mail" data-email href="#"></a></li>
+      </ul>
+    </div>
+    <div class="legal">
+      <p>Fitzroy &amp; Co. provides business education and consulting. Nothing on this site is investment, legal, or tax advice, or an offer or solicitation to buy or sell any security. Fitzroy &amp; Co. is not a broker-dealer or registered investment adviser and does not solicit investors or place securities. The Capital Ledger is an educational illustration, and its results depend entirely on the assumptions you enter.</p>
+      <p>Brian Bartles is a faculty member at the SMU Cox School of Business. Fitzroy &amp; Co. is an independent practice and is not affiliated with, sponsored by, or endorsed by Southern Methodist University.</p>
+      <p>&copy; 2026 Fitzroy &amp; Co.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="ledger-math.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
