@@ -17,8 +17,12 @@ window.FITZROY_CONFIG = {
   exitWaitlistUrl: "",     // The Last Term Sheet
 
   // Email signup (Kit, MailerLite, Buttondown...). Paste the form's POST address here.
-  emailFormAction: "",
-  emailFieldName: "email", // the field name your email service expects
+  emailFormAction: "https://app.kit.com/forms/10046636/subscriptions",
+  emailFieldName: "email_address", // the field name your email service expects (Kit uses "email_address")
+
+  // Optional: a separate form address per interest, if you want each list tagged by its own form.
+  // Keys: general, price-of-money, value, exit. Any key left out uses emailFormAction above.
+  emailFormActions: {},
 
   // Optional: lets one list be tagged by interest. If your email service accepts a hidden
   // field for tags or groups, put its field name here. Each signup form then sends one of:
