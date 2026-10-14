@@ -42,21 +42,23 @@
   all('form[data-capture]').forEach(function (form) {
     var msg = form.querySelector('.capture-msg');
     var input = form.querySelector('input[type="email"]');
-    if (cfg.emailFormAction) {
-      form.action = cfg.emailFormAction;
+    var interest = form.getAttribute('data-interest');
+    var action = (cfg.emailFormActions && interest && cfg.emailFormActions[interest]) || cfg.emailFormAction;
+    if (action) {
+      form.action = action;
       form.method = 'post';
       form.target = '_blank';
       input.name = cfg.emailFieldName || 'email';
-      if (cfg.emailInterestField && form.getAttribute('data-interest')) {
+      if (cfg.emailInterestField && interest) {
         var tag = document.createElement('input');
         tag.type = 'hidden';
         tag.name = cfg.emailInterestField;
-        tag.value = form.getAttribute('data-interest');
+        tag.value = interest;
         form.appendChild(tag);
       }
     }
     form.addEventListener('submit', function (e) {
-      if (!cfg.emailFormAction) {
+      if (!action) {
         e.preventDefault();
         msg.textContent = 'Signup is not open yet. Email ' + (cfg.contactEmail || 'us') + ' to be added to the list.';
         return;
