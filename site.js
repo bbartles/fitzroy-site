@@ -47,6 +47,13 @@
       form.method = 'post';
       form.target = '_blank';
       input.name = cfg.emailFieldName || 'email';
+      if (cfg.emailInterestField && form.getAttribute('data-interest')) {
+        var tag = document.createElement('input');
+        tag.type = 'hidden';
+        tag.name = cfg.emailInterestField;
+        tag.value = form.getAttribute('data-interest');
+        form.appendChild(tag);
+      }
     }
     form.addEventListener('submit', function (e) {
       if (!cfg.emailFormAction) {

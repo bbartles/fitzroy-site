@@ -10,9 +10,18 @@ window.FITZROY_CONFIG = {
 
   // Maven pages
   mavenLightningUrl: "",   // the free Lightning Lesson page
-  mavenCourseUrl: "",      // the cohort course page / waitlist
+  mavenCourseUrl: "",      // The Price of Money: the cohort page / waitlist
+
+  // Waitlists for the two courses in development (Maven waitlist, or leave empty to use the email signup)
+  valueWaitlistUrl: "",    // Value Before Valuation
+  exitWaitlistUrl: "",     // The Last Term Sheet
 
   // Email signup (Kit, MailerLite, Buttondown...). Paste the form's POST address here.
   emailFormAction: "",
-  emailFieldName: "email"  // the field name your email service expects
+  emailFieldName: "email", // the field name your email service expects
+
+  // Optional: lets one list be tagged by interest. If your email service accepts a hidden
+  // field for tags or groups, put its field name here. Each signup form then sends one of:
+  // general, price-of-money, value, exit. Leave empty to skip.
+  emailInterestField: ""
 };
