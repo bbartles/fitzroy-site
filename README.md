@@ -28,4 +28,4 @@ Static site for fitzroyadvisory.com (plain HTML, CSS, and JavaScript; no build s
 Point the Maven lead magnet at `https://fitzroyadvisory.com/price-of-money.html#ledger`.
 
 ## Review before publishing
-The legal footer and the "What this is not" note on the Advisory page are conservative drafts. Have a securities attorney confirm the wording, especially given your Series 3 and 65 licenses, and check your SMU outside-activity disclosure requirements.
+The legal footer and the "What this is not" note on the Advisory page are conservative drafts.
